@@ -42,6 +42,11 @@
             this.lblMulti1 = new System.Windows.Forms.Label();
             this.timerUpgradeCheck = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblDrillCost = new System.Windows.Forms.Label();
+            this.lblDrillQTY = new System.Windows.Forms.Label();
+            this.btnBuyDrill = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pic49er = new System.Windows.Forms.PictureBox();
             this.lbl49erCost = new System.Windows.Forms.Label();
             this.lbl49erAmt = new System.Windows.Forms.Label();
@@ -54,11 +59,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnBuyDrill = new System.Windows.Forms.Button();
-            this.lblDrillQTY = new System.Windows.Forms.Label();
-            this.lblDrillCost = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblGeneratorTotal = new System.Windows.Forms.Label();
             this.lblTotalGoldSec = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -186,6 +186,52 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Auto Generators";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(71, 197);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Drills collect: 25 gold/sec.";
+            // 
+            // lblDrillCost
+            // 
+            this.lblDrillCost.AutoSize = true;
+            this.lblDrillCost.Location = new System.Drawing.Point(8, 167);
+            this.lblDrillCost.Name = "lblDrillCost";
+            this.lblDrillCost.Size = new System.Drawing.Size(84, 13);
+            this.lblDrillCost.TabIndex = 7;
+            this.lblDrillCost.Text = "Cost of Drill: 250";
+            // 
+            // lblDrillQTY
+            // 
+            this.lblDrillQTY.AutoSize = true;
+            this.lblDrillQTY.Location = new System.Drawing.Point(87, 142);
+            this.lblDrillQTY.Name = "lblDrillQTY";
+            this.lblDrillQTY.Size = new System.Drawing.Size(65, 13);
+            this.lblDrillQTY.TabIndex = 6;
+            this.lblDrillQTY.Text = "You have: 0";
+            // 
+            // btnBuyDrill
+            // 
+            this.btnBuyDrill.Location = new System.Drawing.Point(7, 137);
+            this.btnBuyDrill.Name = "btnBuyDrill";
+            this.btnBuyDrill.Size = new System.Drawing.Size(75, 23);
+            this.btnBuyDrill.TabIndex = 5;
+            this.btnBuyDrill.Text = "Buy Drill";
+            this.btnBuyDrill.UseVisualStyleBackColor = true;
+            this.btnBuyDrill.Click += new System.EventHandler(this.btnBuyDrill_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "49\'ers collect: 10 gold/sec.";
+            // 
             // pic49er
             // 
             this.pic49er.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -285,52 +331,6 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "49\'ers collect: 10 gold/sec.";
-            // 
-            // btnBuyDrill
-            // 
-            this.btnBuyDrill.Location = new System.Drawing.Point(7, 137);
-            this.btnBuyDrill.Name = "btnBuyDrill";
-            this.btnBuyDrill.Size = new System.Drawing.Size(75, 23);
-            this.btnBuyDrill.TabIndex = 5;
-            this.btnBuyDrill.Text = "Buy Drill";
-            this.btnBuyDrill.UseVisualStyleBackColor = true;
-            this.btnBuyDrill.Click += new System.EventHandler(this.btnBuyDrill_Click);
-            // 
-            // lblDrillQTY
-            // 
-            this.lblDrillQTY.AutoSize = true;
-            this.lblDrillQTY.Location = new System.Drawing.Point(87, 142);
-            this.lblDrillQTY.Name = "lblDrillQTY";
-            this.lblDrillQTY.Size = new System.Drawing.Size(65, 13);
-            this.lblDrillQTY.TabIndex = 6;
-            this.lblDrillQTY.Text = "You have: 0";
-            // 
-            // lblDrillCost
-            // 
-            this.lblDrillCost.AutoSize = true;
-            this.lblDrillCost.Location = new System.Drawing.Point(8, 167);
-            this.lblDrillCost.Name = "lblDrillCost";
-            this.lblDrillCost.Size = new System.Drawing.Size(84, 13);
-            this.lblDrillCost.TabIndex = 7;
-            this.lblDrillCost.Text = "Cost of Drill: 250";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 197);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Drills collect: 25 gold/sec.";
-            // 
             // lblGeneratorTotal
             // 
             this.lblGeneratorTotal.AutoSize = true;
@@ -370,7 +370,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Idle Clicker v0.0.04";
+            this.Text = "Idle Clicker v0.0.05";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).EndInit();
