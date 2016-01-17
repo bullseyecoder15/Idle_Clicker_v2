@@ -42,18 +42,25 @@
             this.lblMulti1 = new System.Windows.Forms.Label();
             this.timerUpgradeCheck = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBuy49er = new System.Windows.Forms.Button();
-            this.lbl49erAmt = new System.Windows.Forms.Label();
-            this.lbl49erCost = new System.Windows.Forms.Label();
-            this.timerExtraGold = new System.Windows.Forms.Timer(this.components);
             this.pic49er = new System.Windows.Forms.PictureBox();
+            this.lbl49erCost = new System.Windows.Forms.Label();
+            this.lbl49erAmt = new System.Windows.Forms.Label();
+            this.btnBuy49er = new System.Windows.Forms.Button();
+            this.timerExtraGold = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnBuyDrill = new System.Windows.Forms.Button();
+            this.lblDrillQTY = new System.Windows.Forms.Label();
+            this.lblDrillCost = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblGeneratorTotal = new System.Windows.Forms.Label();
+            this.lblTotalGoldSec = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -163,6 +170,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblDrillCost);
+            this.groupBox1.Controls.Add(this.lblDrillQTY);
+            this.groupBox1.Controls.Add(this.btnBuyDrill);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.pic49er);
             this.groupBox1.Controls.Add(this.lbl49erCost);
             this.groupBox1.Controls.Add(this.lbl49erAmt);
@@ -174,39 +186,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Auto Generators";
             // 
-            // btnBuy49er
-            // 
-            this.btnBuy49er.Location = new System.Drawing.Point(6, 22);
-            this.btnBuy49er.Name = "btnBuy49er";
-            this.btnBuy49er.Size = new System.Drawing.Size(75, 23);
-            this.btnBuy49er.TabIndex = 0;
-            this.btnBuy49er.Text = "Buy 49\'er";
-            this.btnBuy49er.UseVisualStyleBackColor = true;
-            this.btnBuy49er.Click += new System.EventHandler(this.btnBuy49er_Click);
-            // 
-            // lbl49erAmt
-            // 
-            this.lbl49erAmt.AutoSize = true;
-            this.lbl49erAmt.Location = new System.Drawing.Point(87, 27);
-            this.lbl49erAmt.Name = "lbl49erAmt";
-            this.lbl49erAmt.Size = new System.Drawing.Size(65, 13);
-            this.lbl49erAmt.TabIndex = 1;
-            this.lbl49erAmt.Text = "You have: 0";
-            // 
-            // lbl49erCost
-            // 
-            this.lbl49erCost.AutoSize = true;
-            this.lbl49erCost.Location = new System.Drawing.Point(5, 48);
-            this.lbl49erCost.Name = "lbl49erCost";
-            this.lbl49erCost.Size = new System.Drawing.Size(90, 13);
-            this.lbl49erCost.TabIndex = 2;
-            this.lbl49erCost.Text = "Cost of 49\'er: 100";
-            // 
-            // timerExtraGold
-            // 
-            this.timerExtraGold.Interval = 1000;
-            this.timerExtraGold.Tick += new System.EventHandler(this.timerExtraGold_Tick);
-            // 
             // pic49er
             // 
             this.pic49er.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -217,6 +196,39 @@
             this.pic49er.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic49er.TabIndex = 3;
             this.pic49er.TabStop = false;
+            // 
+            // lbl49erCost
+            // 
+            this.lbl49erCost.AutoSize = true;
+            this.lbl49erCost.Location = new System.Drawing.Point(5, 48);
+            this.lbl49erCost.Name = "lbl49erCost";
+            this.lbl49erCost.Size = new System.Drawing.Size(90, 13);
+            this.lbl49erCost.TabIndex = 2;
+            this.lbl49erCost.Text = "Cost of 49\'er: 100";
+            // 
+            // lbl49erAmt
+            // 
+            this.lbl49erAmt.AutoSize = true;
+            this.lbl49erAmt.Location = new System.Drawing.Point(87, 27);
+            this.lbl49erAmt.Name = "lbl49erAmt";
+            this.lbl49erAmt.Size = new System.Drawing.Size(65, 13);
+            this.lbl49erAmt.TabIndex = 1;
+            this.lbl49erAmt.Text = "You have: 0";
+            // 
+            // btnBuy49er
+            // 
+            this.btnBuy49er.Location = new System.Drawing.Point(6, 22);
+            this.btnBuy49er.Name = "btnBuy49er";
+            this.btnBuy49er.Size = new System.Drawing.Size(75, 23);
+            this.btnBuy49er.TabIndex = 0;
+            this.btnBuy49er.Text = "Buy 49\'er";
+            this.btnBuy49er.UseVisualStyleBackColor = true;
+            this.btnBuy49er.Click += new System.EventHandler(this.btnBuy49er_Click);
+            // 
+            // timerExtraGold
+            // 
+            this.timerExtraGold.Interval = 1000;
+            this.timerExtraGold.Tick += new System.EventHandler(this.timerExtraGold_Tick);
             // 
             // menuStrip1
             // 
@@ -239,24 +251,24 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.openToolStripMenuItem.Text = "Open";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -269,15 +281,81 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "49\'ers collect: 10 gold/sec.";
+            // 
+            // btnBuyDrill
+            // 
+            this.btnBuyDrill.Location = new System.Drawing.Point(7, 137);
+            this.btnBuyDrill.Name = "btnBuyDrill";
+            this.btnBuyDrill.Size = new System.Drawing.Size(75, 23);
+            this.btnBuyDrill.TabIndex = 5;
+            this.btnBuyDrill.Text = "Buy Drill";
+            this.btnBuyDrill.UseVisualStyleBackColor = true;
+            this.btnBuyDrill.Click += new System.EventHandler(this.btnBuyDrill_Click);
+            // 
+            // lblDrillQTY
+            // 
+            this.lblDrillQTY.AutoSize = true;
+            this.lblDrillQTY.Location = new System.Drawing.Point(87, 142);
+            this.lblDrillQTY.Name = "lblDrillQTY";
+            this.lblDrillQTY.Size = new System.Drawing.Size(65, 13);
+            this.lblDrillQTY.TabIndex = 6;
+            this.lblDrillQTY.Text = "You have: 0";
+            // 
+            // lblDrillCost
+            // 
+            this.lblDrillCost.AutoSize = true;
+            this.lblDrillCost.Location = new System.Drawing.Point(8, 167);
+            this.lblDrillCost.Name = "lblDrillCost";
+            this.lblDrillCost.Size = new System.Drawing.Size(84, 13);
+            this.lblDrillCost.TabIndex = 7;
+            this.lblDrillCost.Text = "Cost of Drill: 250";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(71, 197);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Drills collect: 25 gold/sec.";
+            // 
+            // lblGeneratorTotal
+            // 
+            this.lblGeneratorTotal.AutoSize = true;
+            this.lblGeneratorTotal.Location = new System.Drawing.Point(161, 138);
+            this.lblGeneratorTotal.Name = "lblGeneratorTotal";
+            this.lblGeneratorTotal.Size = new System.Drawing.Size(178, 13);
+            this.lblGeneratorTotal.TabIndex = 11;
+            this.lblGeneratorTotal.Text = "Generators are creating: 0 gold/sec.";
+            // 
+            // lblTotalGoldSec
+            // 
+            this.lblTotalGoldSec.AutoSize = true;
+            this.lblTotalGoldSec.Location = new System.Drawing.Point(161, 154);
+            this.lblTotalGoldSec.Name = "lblTotalGoldSec";
+            this.lblTotalGoldSec.Size = new System.Drawing.Size(191, 13);
+            this.lblTotalGoldSec.TabIndex = 12;
+            this.lblTotalGoldSec.Text = "Total gold being produced: 0 gold/sec.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 352);
+            this.Controls.Add(this.lblTotalGoldSec);
+            this.Controls.Add(this.lblGeneratorTotal);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblMulti1);
             this.Controls.Add(this.btnMulti1);
@@ -292,7 +370,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Idle Clicker v0.0.03";
+            this.Text = "Idle Clicker v0.0.04";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).EndInit();
@@ -329,6 +407,13 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Label lblDrillCost;
+        private System.Windows.Forms.Label lblDrillQTY;
+        private System.Windows.Forms.Button btnBuyDrill;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblGeneratorTotal;
+        private System.Windows.Forms.Label lblTotalGoldSec;
     }
 }
 
