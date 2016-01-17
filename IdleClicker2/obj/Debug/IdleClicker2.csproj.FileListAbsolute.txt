@@ -15,3 +15,14 @@ C:\Users\Demo\Documents\Visual Studio 2012\Projects\IdleClicker2\IdleClicker2\ob
 C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\bin\Debug\IdleClicker2.exe.config
 C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.exe
 C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.pdb
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\bin\Debug\IdleClicker2.exe.manifest
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\bin\Debug\IdleClicker2.application
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\bin\Debug\IdleClicker2.exe
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\bin\Debug\IdleClicker2.pdb
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.csprojResolveAssemblyReference.cache
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.About.resources
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.Form1.resources
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.Properties.Resources.resources
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.csproj.GenerateResource.Cache
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.exe.manifest
+C:\Users\Demo\Documents\GitHub\Idle_Clicker_v2\IdleClicker2\obj\Debug\IdleClicker2.application

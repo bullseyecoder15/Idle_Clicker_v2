@@ -121,7 +121,7 @@
   <data name="btnGetGold.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfdCxAAHRM+b+4d
+        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfdCxAAHRM+b+4d
         AAAEFUlEQVQ4T42TaVCVZRiGv4RA4AApsWdRQLhACBEuuIEgByePooIpEqClkgvLYYotB21UoCbAbTQr
         EC3NUpthUY/jASFFiiWQpQE1QYUwbLIpJbCu3vMBAcmP7pnn+/G973PN/SyvxP9QsUbLwuCV6BmaoPeE
         hIGBAYrxNji7vsJvv/8xcKtfI4Bdd7u5XFlN3tEv2LA5AdvnpyBJEh6WEpkqQ7RbLGjY4UDLB07UbrXn
@@ -147,9 +147,6 @@
   </metadata>
   <metadata name="timerUpgradeCheck.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>164, 17</value>
-  </metadata>
-  <metadata name="timerExtraGold.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>324, 17</value>
   </metadata>
   <data name="pic49er.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -389,6 +386,9 @@
         LtTpJ0LWtOgTM8OHbg948ePHu6ksZiiX87dD0ABTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==
 </value>
   </data>
+  <metadata name="timerExtraGold.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>324, 17</value>
+  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>457, 17</value>
   </metadata>
