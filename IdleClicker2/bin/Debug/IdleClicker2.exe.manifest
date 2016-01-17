@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IdleClicker2.exe" size="651776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IdleClicker2.exe" size="1110016">
       <assemblyIdentity name="IdleClicker2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Fl0MxBwxTvPgQJU4SQryJU7n8OVHU5EvuiNWninc8F4=</dsig:DigestValue>
+        <dsig:DigestValue>urR8v20XCRnVRwS6pnhqsTR2NHzURjraIVlaCn9oLQo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

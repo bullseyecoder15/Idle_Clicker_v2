@@ -61,9 +61,11 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblGeneratorTotal = new System.Windows.Forms.Label();
             this.lblTotalGoldSec = new System.Windows.Forms.Label();
+            this.picDrill = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGetGold
@@ -170,6 +172,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.picDrill);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblDrillCost);
             this.groupBox1.Controls.Add(this.lblDrillQTY);
@@ -189,7 +192,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 197);
+            this.label2.Location = new System.Drawing.Point(67, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 13);
             this.label2.TabIndex = 8;
@@ -349,6 +352,16 @@
             this.lblTotalGoldSec.TabIndex = 12;
             this.lblTotalGoldSec.Text = "Total gold being produced: 0 gold/sec.";
             // 
+            // picDrill
+            // 
+            this.picDrill.Image = ((System.Drawing.Image)(resources.GetObject("picDrill.Image")));
+            this.picDrill.Location = new System.Drawing.Point(8, 183);
+            this.picDrill.Name = "picDrill";
+            this.picDrill.Size = new System.Drawing.Size(53, 63);
+            this.picDrill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDrill.TabIndex = 9;
+            this.picDrill.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +389,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,6 +428,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblGeneratorTotal;
         private System.Windows.Forms.Label lblTotalGoldSec;
+        private System.Windows.Forms.PictureBox picDrill;
     }
 }
 

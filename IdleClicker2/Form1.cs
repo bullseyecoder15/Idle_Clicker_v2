@@ -78,9 +78,9 @@ namespace IdleClicker2
         {
             // Upgrade the clicker amount per click
             if(gold >= upgradeClickCost){
-                goldPerClick += 1;
+                goldPerClick += Math.Floor(goldPerClick * 1.10); // try to increase by 110%;
                 gold = gold - upgradeClickCost;
-                upgradeClickCost = Math.Floor(10 * Math.Pow(1.5, goldPerClick));
+                upgradeClickCost += Math.Ceiling(upgradeClickCost * 0.35); // increase by adding previous upgrade cost with an additional 35% of last cost
                 UpdateForm();
             } else {
                 MessageBox.Show("You do not have enough gold", "Sorry, but...");
@@ -107,7 +107,7 @@ namespace IdleClicker2
             {
                 autoClickerOn = true;
                 gold -= autoClickerAmt;
-                autoClickerAmt = Math.Floor(30 * Math.Pow(1.5, goldPerClick));
+                autoClickerAmt = Math.Floor(autoClickerAmt * 1.35); // increase cost by 35%
                 autoClickersPurch++;
                 UpdateForm();
             }
@@ -159,15 +159,13 @@ namespace IdleClicker2
             if (gold >= _drillCost)
             {
                 btnBuyDrill.Enabled = true;
+                picDrill.Visible = true;
             }
-            else { btnBuyDrill.Enabled = false; }
+            else { btnBuyDrill.Enabled = false; picDrill.Visible = false; }
         }
 
         private void btnBuy49er_Click(object sender, EventArgs e)
         {
-        //public double _49erCost = 100;
-        //public double _49erQTY = 0;
-        //public double _49erGeneratedAmt = 10;
             if(gold >= _49erCost)
             {
                 gold -= _49erCost;
@@ -209,10 +207,6 @@ namespace IdleClicker2
 
         private void btnBuyDrill_Click(object sender, EventArgs e)
         {
-            //public double _drillCost = 100;
-            //public double _drillQTY = 0;
-            //public double _drillGeneratedAmt = 10;
-
             // check to see if the player has enough gold
             if (gold >= _drillCost)
             {
