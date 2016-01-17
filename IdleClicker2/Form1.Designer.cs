@@ -42,11 +42,12 @@
             this.lblMulti1 = new System.Windows.Forms.Label();
             this.timerUpgradeCheck = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.picDrill = new System.Windows.Forms.PictureBox();
+            this.lblDrillGoldSec = new System.Windows.Forms.Label();
             this.lblDrillCost = new System.Windows.Forms.Label();
             this.lblDrillQTY = new System.Windows.Forms.Label();
             this.btnBuyDrill = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl49goldsec = new System.Windows.Forms.Label();
             this.pic49er = new System.Windows.Forms.PictureBox();
             this.lbl49erCost = new System.Windows.Forms.Label();
             this.lbl49erAmt = new System.Windows.Forms.Label();
@@ -61,11 +62,10 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblGeneratorTotal = new System.Windows.Forms.Label();
             this.lblTotalGoldSec = new System.Windows.Forms.Label();
-            this.picDrill = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGetGold
@@ -173,11 +173,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.picDrill);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblDrillGoldSec);
             this.groupBox1.Controls.Add(this.lblDrillCost);
             this.groupBox1.Controls.Add(this.lblDrillQTY);
             this.groupBox1.Controls.Add(this.btnBuyDrill);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lbl49goldsec);
             this.groupBox1.Controls.Add(this.pic49er);
             this.groupBox1.Controls.Add(this.lbl49erCost);
             this.groupBox1.Controls.Add(this.lbl49erAmt);
@@ -189,14 +189,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Auto Generators";
             // 
-            // label2
+            // picDrill
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Drills collect: 25 gold/sec.";
+            this.picDrill.Image = ((System.Drawing.Image)(resources.GetObject("picDrill.Image")));
+            this.picDrill.Location = new System.Drawing.Point(8, 183);
+            this.picDrill.Name = "picDrill";
+            this.picDrill.Size = new System.Drawing.Size(53, 63);
+            this.picDrill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDrill.TabIndex = 9;
+            this.picDrill.TabStop = false;
+            // 
+            // lblDrillGoldSec
+            // 
+            this.lblDrillGoldSec.AutoSize = true;
+            this.lblDrillGoldSec.Location = new System.Drawing.Point(67, 207);
+            this.lblDrillGoldSec.Name = "lblDrillGoldSec";
+            this.lblDrillGoldSec.Size = new System.Drawing.Size(129, 13);
+            this.lblDrillGoldSec.TabIndex = 8;
+            this.lblDrillGoldSec.Text = "Drills collect: 25 gold/sec.";
             // 
             // lblDrillCost
             // 
@@ -226,14 +236,14 @@
             this.btnBuyDrill.UseVisualStyleBackColor = true;
             this.btnBuyDrill.Click += new System.EventHandler(this.btnBuyDrill_Click);
             // 
-            // label1
+            // lbl49goldsec
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "49\'ers collect: 10 gold/sec.";
+            this.lbl49goldsec.AutoSize = true;
+            this.lbl49goldsec.Location = new System.Drawing.Point(68, 85);
+            this.lbl49goldsec.Name = "lbl49goldsec";
+            this.lbl49goldsec.Size = new System.Drawing.Size(135, 13);
+            this.lbl49goldsec.TabIndex = 4;
+            this.lbl49goldsec.Text = "49\'ers collect: 10 gold/sec.";
             // 
             // pic49er
             // 
@@ -352,16 +362,6 @@
             this.lblTotalGoldSec.TabIndex = 12;
             this.lblTotalGoldSec.Text = "Total gold being produced: 0 gold/sec.";
             // 
-            // picDrill
-            // 
-            this.picDrill.Image = ((System.Drawing.Image)(resources.GetObject("picDrill.Image")));
-            this.picDrill.Location = new System.Drawing.Point(8, 183);
-            this.picDrill.Name = "picDrill";
-            this.picDrill.Size = new System.Drawing.Size(53, 63);
-            this.picDrill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picDrill.TabIndex = 9;
-            this.picDrill.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,10 +386,10 @@
             this.Text = "Idle Clicker v0.0.05";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic49er)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDrill)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,8 +424,8 @@
         private System.Windows.Forms.Label lblDrillCost;
         private System.Windows.Forms.Label lblDrillQTY;
         private System.Windows.Forms.Button btnBuyDrill;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl49goldsec;
+        private System.Windows.Forms.Label lblDrillGoldSec;
         private System.Windows.Forms.Label lblGeneratorTotal;
         private System.Windows.Forms.Label lblTotalGoldSec;
         private System.Windows.Forms.PictureBox picDrill;
