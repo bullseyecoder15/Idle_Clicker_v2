@@ -70,6 +70,7 @@
             // 
             // btnGetGold
             // 
+            this.btnGetGold.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGetGold.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetGold.Image = ((System.Drawing.Image)(resources.GetObject("btnGetGold.Image")));
             this.btnGetGold.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -84,6 +85,7 @@
             // 
             // lblGoldAmt
             // 
+            this.lblGoldAmt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGoldAmt.AutoSize = true;
             this.lblGoldAmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGoldAmt.Location = new System.Drawing.Point(202, 32);
@@ -94,6 +96,7 @@
             // 
             // lblGoldPerClick
             // 
+            this.lblGoldPerClick.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGoldPerClick.AutoSize = true;
             this.lblGoldPerClick.Location = new System.Drawing.Point(297, 81);
             this.lblGoldPerClick.Name = "lblGoldPerClick";
@@ -172,6 +175,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.picDrill);
             this.groupBox1.Controls.Add(this.lblDrillGoldSec);
             this.groupBox1.Controls.Add(this.lblDrillCost);
@@ -346,6 +350,7 @@
             // 
             // lblGeneratorTotal
             // 
+            this.lblGeneratorTotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGeneratorTotal.AutoSize = true;
             this.lblGeneratorTotal.Location = new System.Drawing.Point(161, 138);
             this.lblGeneratorTotal.Name = "lblGeneratorTotal";
@@ -355,6 +360,7 @@
             // 
             // lblTotalGoldSec
             // 
+            this.lblTotalGoldSec.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTotalGoldSec.AutoSize = true;
             this.lblTotalGoldSec.Location = new System.Drawing.Point(161, 154);
             this.lblTotalGoldSec.Name = "lblTotalGoldSec";

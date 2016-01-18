@@ -26,14 +26,16 @@ namespace IdleClicker2
         public double multi1QTY = 0;
 
         // Buy auto-49'er
-        public double _49erCost = 100;
+        public double _49erBaseCost = 100;
         public double _49erQTY = 0;
-        public double _49erGeneratedAmt = 10;
+        public double _49erGeneratedAmt = 5;
+        public double _49erCost = 100;
 
         // Buy auto-Drill
         public double _drillCost = 250;
         public double _drillQTY = 0;
         public double _drillGeneratedAmt = 25;
+        public double _drillBaseCost = 250;
 
         public Form1()
         {
@@ -175,9 +177,10 @@ namespace IdleClicker2
             {
                 gold -= _49erCost;
                 _49erQTY++;
-                _49erCost = Math.Floor(_49erCost * 1.25);
-                UpdateForm();
+                // _49erBaseCost = Math.Floor(_49erBaseCost * 1.25); *Don't need?
                 timerExtraGold.Enabled = true;
+                _49erCost = _49erBaseCost * (Math.Pow(1.07, _49erQTY));
+                UpdateForm();
             }
         }
 
@@ -217,9 +220,10 @@ namespace IdleClicker2
             {
                 gold -= _drillCost; // subtract gold from user
                 _drillQTY++; // increse the amount of 'drills'
-                _drillCost = Math.Floor(_drillCost * 1.35); // increase the cost of the next drill by 35%
-                UpdateForm(); // update labels
+                _drillCost = _drillBaseCost * (Math.Pow(1.07, _drillQTY));
+                // _drillCost = Math.Floor(_drillCost * 1.35); // increase the cost of the next drill by 35% *don't need
                 timerExtraGold.Enabled = true; // ensure that the timer is running. More drill information can be found in there.
+                UpdateForm(); // update labels
             }
         }
     }
