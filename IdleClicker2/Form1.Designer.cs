@@ -184,7 +184,7 @@
             this.groupBox1.Controls.Add(this.btnBuy49er);
             this.groupBox1.Location = new System.Drawing.Point(409, 37);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 311);
+            this.groupBox1.Size = new System.Drawing.Size(288, 475);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Auto Generators";
@@ -296,7 +296,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(694, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(709, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -366,7 +366,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 352);
+            this.ClientSize = new System.Drawing.Size(709, 537);
             this.Controls.Add(this.lblTotalGoldSec);
             this.Controls.Add(this.lblGeneratorTotal);
             this.Controls.Add(this.groupBox1);
@@ -382,6 +382,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(725, 575);
             this.Name = "Form1";
             this.Text = "Idle Clicker v0.0.05";
             this.groupBox1.ResumeLayout(false);
