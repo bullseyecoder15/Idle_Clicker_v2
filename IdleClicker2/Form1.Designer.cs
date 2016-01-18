@@ -90,9 +90,9 @@
             this.lblGoldAmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGoldAmt.Location = new System.Drawing.Point(202, 32);
             this.lblGoldAmt.Name = "lblGoldAmt";
-            this.lblGoldAmt.Size = new System.Drawing.Size(77, 24);
+            this.lblGoldAmt.Size = new System.Drawing.Size(105, 24);
             this.lblGoldAmt.TabIndex = 1;
-            this.lblGoldAmt.Text = "Gold: 0";
+            this.lblGoldAmt.Text = "Gold: 0.00";
             // 
             // lblGoldPerClick
             // 
@@ -119,9 +119,9 @@
             this.lblCostToUpgrade.AutoSize = true;
             this.lblCostToUpgrade.Location = new System.Drawing.Point(11, 80);
             this.lblCostToUpgrade.Name = "lblCostToUpgrade";
-            this.lblCostToUpgrade.Size = new System.Drawing.Size(102, 13);
+            this.lblCostToUpgrade.Size = new System.Drawing.Size(108, 13);
             this.lblCostToUpgrade.TabIndex = 4;
-            this.lblCostToUpgrade.Text = "Cost to Upgrade: 15";
+            this.lblCostToUpgrade.Text = "Cost to Upgrade: 200";
             // 
             // timerAutoRefresh
             // 
@@ -390,7 +390,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(725, 575);
             this.Name = "Form1";
-            this.Text = "Idle Clicker v0.0.05";
+            this.Text = "Idle Clicker v0.0.07";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDrill)).EndInit();

@@ -14,7 +14,9 @@ namespace IdleClicker2
     {
         public double gold = 0;
         public double goldPerClick = 1;
-        public double upgradeClickCost = 15;
+        public double upgradeClickCost = 200;
+        public double BaseUpgradeClickCost = 200;
+        public double upgradeQTY = 0;
 
         //auto clicker variables
         public double autoClickerAmt = 30;
@@ -48,8 +50,8 @@ namespace IdleClicker2
         public void UpdateForm()
         {
             // update the label that shows the player how much gold they have
-            lblGoldAmt.Text = "Gold: " + gold;
-            // lblGoldAmt.Text = String.Format("Gold: {0:0,0}", gold);
+            // lblGoldAmt.Text = "Gold: " + gold;
+            lblGoldAmt.Text = String.Format("Gold: {0:N}", gold);
             lblGoldPerClick.Text = "Gold per click: " + goldPerClick;
             lblCostToUpgrade.Text = "Cost to Upgrade: " + upgradeClickCost;
             lblMulti1.Text = "Cost to buy: " + mulit1Cost;
@@ -83,9 +85,10 @@ namespace IdleClicker2
         {
             // Upgrade the clicker amount per click
             if(gold >= upgradeClickCost){
-                goldPerClick += Math.Floor(goldPerClick * 1.10); // try to increase by 110%;
+                goldPerClick++;
                 gold = gold - upgradeClickCost;
-                upgradeClickCost += Math.Ceiling(upgradeClickCost * 0.35); // increase by adding previous upgrade cost with an additional 35% of last cost
+                upgradeQTY++;
+                upgradeClickCost = BaseUpgradeClickCost * (Math.Pow(1.05, upgradeQTY));
                 UpdateForm();
             } else {
                 MessageBox.Show("You do not have enough gold", "Sorry, but...");
