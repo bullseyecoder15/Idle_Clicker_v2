@@ -19,7 +19,7 @@ namespace IdleClicker2
         public double upgradeQTY = 0;
 
         //auto clicker variables
-        public double autoClickerAmt = 30;
+        public double autoClickerAmt = 20;
         public bool autoClickerOn = false;
         public double autoClickersPurch = 0;
 
@@ -55,7 +55,7 @@ namespace IdleClicker2
             lblGoldPerClick.Text = "Gold per click: " + goldPerClick;
             lblCostToUpgrade.Text = "Cost to Upgrade: " + upgradeClickCost;
             lblMulti1.Text = "Cost to buy: " + mulit1Cost;
-            lblAutoCost.Text = "Cost of Auto Clicker: " + autoClickerAmt;
+            lblAutoCost.Text = String.Format("Cost of Auto Clicker: {0:N}", autoClickerAmt);
             lbl49erAmt.Text = "You have: " + _49erQTY;
             lbl49erCost.Text = "Cost of 49'er: " + _49erCost;
             lbl49goldsec.Text = "49'ers collect: " + _49erGeneratedAmt + " gold/sec.";
@@ -103,7 +103,7 @@ namespace IdleClicker2
                 int i = 1;
                 while (i <= autoClickersPurch)
                 {
-                    btnGetGold.PerformClick();
+                    gold += (.1 * autoClickersPurch);
                     i++;
                 }
             }
@@ -113,9 +113,10 @@ namespace IdleClicker2
         {
             if (gold >= autoClickerAmt)
             {
+                double autoClickerBaseCost = 20;
                 autoClickerOn = true;
                 gold -= autoClickerAmt;
-                autoClickerAmt = Math.Floor(autoClickerAmt * 1.35); // increase cost by 35%
+                autoClickerAmt = autoClickerBaseCost * (Math.Pow(1.03, autoClickersPurch));
                 autoClickersPurch++;
                 UpdateForm();
             }

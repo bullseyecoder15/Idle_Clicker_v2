@@ -144,9 +144,9 @@
             this.lblAutoCost.AutoSize = true;
             this.lblAutoCost.Location = new System.Drawing.Point(14, 174);
             this.lblAutoCost.Name = "lblAutoCost";
-            this.lblAutoCost.Size = new System.Drawing.Size(118, 13);
+            this.lblAutoCost.Size = new System.Drawing.Size(133, 13);
             this.lblAutoCost.TabIndex = 6;
-            this.lblAutoCost.Text = "Cost of Auto Clicker: 30";
+            this.lblAutoCost.Text = "Cost of Auto Clicker: 20.00";
             // 
             // btnMulti1
             // 
